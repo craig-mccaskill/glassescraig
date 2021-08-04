@@ -162,86 +162,19 @@
       </div>
     </div>
 
-    <!--
-    Mobile menu, show/hide based on mobile menu state.
+    <!--Mobile menu, show/hide based on mobile menu state.-->
+  <div class="sm:hidden" id="mobile-menu">
+    <div class="px-2 pt-2 pb-3 space-y-1">
+      <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+      <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Dashboard</a>
 
-    Entering: "duration-200 ease-out"
-      From: "opacity-0 scale-95"
-      To: "opacity-100 scale-100"
-    Leaving: "duration-100 ease-in"
-      From: "opacity-100 scale-100"
-      To: "opacity-0 scale-95"
-  -->
-    <div
-      class="
-        absolute
-        top-0
-        inset-x-0
-        p-2
-        transition
-        transform
-        origin-top-right
-        md:hidden
-      "
-    >
-      <div
-        class="
-          rounded-lg
-          shadow-lg
-          ring-1 ring-black ring-opacity-5
-          bg-white
-          divide-y-2 divide-gray-50
-        "
-      >
-        <div class="pt-5 pb-6 px-5">
-          <div class="flex items-center justify-between">
-            <div>
-              <img
-                class="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                alt="Workflow"
-              />
-            </div>
-            <div class="-mr-2">
-              <button
-                type="button"
-                class="
-                  bg-white
-                  rounded-md
-                  p-2
-                  inline-flex
-                  items-center
-                  justify-center
-                  text-gray-400
-                  hover:text-gray-500
-                  hover:bg-gray-100
-                  focus:outline-none
-                  focus:ring-2 focus:ring-inset focus:ring-indigo-500
-                "
-              >
-                <span class="sr-only">Close menu</span>
-                <!-- Heroicon name: outline/x -->
-                <svg
-                  class="h-6 w-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+      <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Team</a>
+
+      <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+
+      <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Calendar</a>
     </div>
+  </div>
   </div>
 </template>
 
