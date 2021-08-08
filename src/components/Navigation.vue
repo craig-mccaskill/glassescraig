@@ -78,6 +78,7 @@
                 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500
               "
             >
+            <!-- https://reactgo.com/scroll-to-anchor-tags-vue-router/ -->
               <span>About</span>
             </button>
 
