@@ -1,7 +1,8 @@
 <template>
   <my-navigation></my-navigation>
-  <landing></landing>
-  <About></About>
+  <!-- <landing></landing> -->
+  <!-- <About></About> -->
+  <Items></Items>
   <Footer></Footer>
 </template>
 
@@ -10,12 +11,14 @@ import Navigation from './components/Navigation'
 import Landing from './components/Landing';
 import Footer from './components/Footer';
 import About from './components/About';
+import Items from './components/Items';
   export default {
      components:{
          'my-navigation':Navigation,
          'landing':Landing,
          Footer,
-         About
+         About,
+         Items
        }
   }
 </script>
