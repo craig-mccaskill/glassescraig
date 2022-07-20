@@ -1,23 +1,19 @@
 <template>
-  <my-navigation></my-navigation>
-  <landing></landing>
-  <About></About>
-  <Footer></Footer>
+  <img class="object-center mx-auto h-8 sm:h-9" :src=glasses>
+  <div id="nav" class="pt-3">
+    <router-link to="/">Home</router-link> |
+    <router-link to="/about">About</router-link>
+  </div>
+  <router-view/>
 </template>
 
 <script>
-import Navigation from './components/Navigation'
-import Landing from './components/Landing';
-import Footer from './components/Footer';
-import About from './components/About';
-  export default {
-     components:{
-         'my-navigation':Navigation,
-         'landing':Landing,
-         Footer,
-         About
-       }
-  }
+export default {
+  name: "App",
+  data: () => ({
+    glasses: require('@/assets/glasses.svg')
+  })
+};
 </script>
 
 <style>
@@ -25,8 +21,20 @@ import About from './components/About';
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align: center;
   color: #2c3e50;
-  background: #FFB1A4;
-  /* https://codepen.io/notwaldorf/pen/omXwzw */
+}
+
+#nav {
+  padding-bottom: 30px;
+}
+
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+#nav a.router-link-exact-active {
+  color: #42b983;
 }
 </style>
